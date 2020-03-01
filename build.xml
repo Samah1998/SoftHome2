@@ -1,10 +1,12 @@
- <project>
+ <project defult="compile">
 
      <property name="srcCode" location="./src/Source"/>
      <property name="classCode" location="./targets"/>
+     <property name="resultj" location="${classCode}/classes"/>
+  
      <target name="compile">
-     <mkdir dir="${classCode}"/>
-     <javac srcdir="${srcCode}" destdir="${classCode}"/>
+              <mkdir dir="${resultj}"/>
+              <javac srcdir="${srcCode}" destdir="${resultj}" debug="true" includeantruntime="false"/>
      </target>
  	
 </project>

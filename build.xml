@@ -1,0 +1,10 @@
+ <project>
+
+     <property name="srcCode" location="./src/Source"/>
+     <property name="classCode" location="./targets"/>
+     <target name="compile">
+     <mkdir dir="${classCode}"/>
+     <javac srcdir="${srcCode}" destdir="${classCode}"/>
+     </target>
+ 	
+</project>
